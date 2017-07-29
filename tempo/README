@@ -1,0 +1,24 @@
+### Installation
+I assume you have node and npm installed. From there, it's just:
+```
+npm install
+```
+and you should end up with a working installation.
+
+### Running
+Once you've installed, this is as simple as:
+```
+node index.js
+```
+You'll see a multiline prompt where you can enter BOM data line by line.
+Remember, this system still lacks validation so weird things may happen if
+you don't enter data in the specific formats laid out in the spec. Once you're
+done entering data, hit CTRL+C and you'll get hot, fresh JSON.
+
+### Testing
+This is just:
+```
+npm test
+```
+To run a little integration test I put together. Next steps here might include
+unit tests on individual functions within bomToJSON.js.
